@@ -13,9 +13,9 @@ from tensorflow.keras.optimizers import Adam, RMSprop
 from tensorflow.keras.losses import mean_absolute_error, binary_crossentropy
 from tensorflow.keras.backend import int_shape
 
-from provided_code.dropout import CustomSpatialDropout3D
-from provided_code.spectral_normalization import DenseSN, ConvSN3D, ConvSN3DTranspose
-from provided_code.Cones import Cones3D, cone3D_coordinates_normalization, cone3D_aperture_regularization, ConeCoordinatesRegularization
+from openkbp.dropout import CustomSpatialDropout3D
+from openkbp.spectral_normalization import DenseSN, ConvSN3D, ConvSN3DTranspose
+from openkbp.cones import Cones3D, cone3D_coordinates_normalization, cone3D_aperture_regularization, ConeCoordinatesRegularization
 
 
 class DefineDoseFromCT:

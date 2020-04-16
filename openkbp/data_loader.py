@@ -1,6 +1,6 @@
 import numpy as np
 
-from provided_code.general_functions import get_paths, load_file
+from openkbp.general_functions import get_paths, load_file
 
 
 class DataLoader:

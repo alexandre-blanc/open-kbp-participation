@@ -14,12 +14,12 @@ from tensorflow.keras.optimizers import Adam
 from tensorflow.keras.backend import concatenate, int_shape
 import tensorflow.keras.backend as K
 import tensorflow as tf
-from provided_code.general_functions import get_paths, make_directory_and_return_path, sparse_vector_function
-from provided_code.network_architectures import DefineDoseFromCT
-from provided_code.dropout import CustomSpatialDropout3D
-from provided_code.network_architectures import MultiplyByScalar
-from provided_code.spectral_normalization import apply_spectral_normalization, DenseSN, ConvSN3D, ConvSN3DTranspose
-from provided_code.Cones import Cones3D, cone3D_aperture_regularization, cone3D_direction_regularization, ConeCoordinatesRegularization, cone3D_coordinates_normalization
+from openkbp.general_functions import get_paths, make_directory_and_return_path, sparse_vector_function
+from openkbp.network_architectures import DefineDoseFromCT
+from openkbp.dropout import CustomSpatialDropout3D
+from openkbp.network_architectures import MultiplyByScalar
+from openkbp.spectral_normalization import apply_spectral_normalization, DenseSN, ConvSN3D, ConvSN3DTranspose
+from openkbp.cones import Cones3D, cone3D_aperture_regularization, cone3D_direction_regularization, ConeCoordinatesRegularization, cone3D_coordinates_normalization
 from scipy.ndimage import zoom
 
 custom_objects = {"CustomSpatialDropout3D":CustomSpatialDropout3D ,
